@@ -11,6 +11,7 @@ global = {
   \time 4/4
   \tempo "Andante cantabile"
   \compressFullBarRests
+  \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
 
 scoreASoprano = \relative c'' {
