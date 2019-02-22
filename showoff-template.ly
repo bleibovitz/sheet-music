@@ -1,8 +1,8 @@
 \version "2.18.2"
 
 \header {
-  title = "33. Anthem"
-  subtitle = "(Chess)"
+  title = "#. Name"
+  subtitle = "(Original Show)"
   tagline = ##f
 }
 
@@ -11,6 +11,7 @@ global = {
   \time 4/4
   \tempo "Andante cantabile"
   \compressFullBarRests
+  \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
 
 scoreASoprano = \relative c'' {
