@@ -21,7 +21,8 @@ right = \relative c'' {
   cis4( b8 cis) e4( d) b8( cis b a) a4( d8 a) g4 a16( g fis g) b4( a) a1 %5-8
   <>^"[Vocal]" R1*3 r4 fis->^\markup { \box "French Horn" "(both hands)" } d-> b-> a1-> R1*2 r4 d-> e-> fis-> %9-16
   R1*8 %17-24
-  R1*3 << { R1 b'2.^\markup { \box "Flute" }( a8 g a4 d,2) \tuplet 5/4 { d16( e fis g a) } b4( a2 g4 a2 ~ a8) } \\ { r4 d,,->_\markup { \box "French Horn" } fis-> a-> b1( a) b4( a2 g4 a2 ~ a8) } >> r8 a4^\markup { \box "Oboe" }
+  R1*3 << { R1 b'2.^\markup { \box "Flute" \italic "w/ vocals" }( a8 g a4 d,2) \tuplet 5/4 { d16( e fis g a) } b4( a2 g4 a2 ~ a8) } \\ { r4 d,,->_\markup { \box "French Horn" } fis-> a-> b1( a) b4( a2 g4 a2 ~ a8) } >> r8 a4^\markup { \box "Oboe" \italic "w/ vocals" }(
+  d2) cis8( b cis d) cis4( fis,2) a4( b) r \tuplet 3/2 { fis'4( d fis } a1)
   
 }
 
