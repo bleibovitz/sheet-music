@@ -19,12 +19,14 @@ right = \relative c'' {
   \global
   fis,2^\markup { \box "English Horn" }\p( d4 fis a2.) b8 cis d4 cis8 d fis4 e cis2 ~ cis8 r a( b) %1-4
   cis4( b8 cis) e4( d) b8( cis b a) a4( d8 a) g4 a16( g fis g) b4( a) a1 %5-8
+  <>^"[Vocal]" R1*3 r4 fis->^\markup { \box "French Horn" } d-> b-> a1-> R1*2 r4 d-> e-> fis-> %9-16
   
 }
 
 left = \relative c' {
   \global
   R1*8 \bar "||" %1-8
+  R1*7 r4 d,-> e-> fis-> \bar "||" %9-16
   
 }
 
