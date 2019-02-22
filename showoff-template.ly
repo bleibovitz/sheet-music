@@ -16,25 +16,25 @@ global = {
 
 scoreASoprano = \relative c'' {
   \global
-  R1*8
+  % Music follows here.
   
 }
 
 scoreAAlto = \relative c' {
   \global
-  R1*8
+  % Music follows here.
   
 }
 
 scoreATenor = \relative c' {
   \global
-  R1*8
+  % Music follows here.
   
 }
 
 scoreABassChoir = \relative c {
   \global
-  R1*8
+  % Music follows here.
   
 }
 
@@ -46,7 +46,7 @@ scoreAVerseChoir = \lyricmode {
 scoreATenorVoice = \relative c' {
   \global
   \dynamicUp
-  R1*8
+  % Music follows here. Replace as needed.
   
 }
 
@@ -81,13 +81,13 @@ scoreALeftPianoII = \relative c' {
 
 scoreADrum = \drummode {
   \global
-  R1*8^"take mallets"
+  % Music follows here.
   
 }
 
 scoreABassBass = \relative c, {
   \global
-  R1*4 r2 g'\pp ~ g fis e1 a,
+  % Music follows here.
   
 }
 
