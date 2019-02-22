@@ -9,6 +9,9 @@
 global = {
   \key d \major
   \time 4/4
+  \tempo "Andante cantabile"
+  \compressFullBarRests
+  \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
 
 right = \relative c'' {
