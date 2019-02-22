@@ -22,7 +22,8 @@ right = \relative c'' {
   <>^"[Vocal]" R1*3 r4 fis->^\markup { \box "French Horn" "(both hands)" } d-> b-> a1-> R1*2 r4 d-> e-> fis-> %9-16
   R1*8 %17-24
   R1*3 << { R1 b'2.^\markup { \box "Flute" \italic "w/ vocals" }( a8 g a4 d,2) \tuplet 5/4 { d16( e fis g a) } b4( a2 g4 a2 ~ a8) } \\ { r4 d,,->_\markup { \box "French Horn" } fis-> a-> b1( a) b4( a2 g4 a2 ~ a8) } >> r8 a4^\markup { \box "Oboe" \italic "w/ vocals" }(
-  d2) cis8( b cis d) cis4( fis,2) a4( b) r \tuplet 3/2 { fis'4( d fis } a1)
+  d2) cis8( b cis d) cis4( fis,2) a4( b) r \tuplet 3/2 { fis'4( d fis } a1\<) R1*3\! << { r2 cis,8^\markup { \box "Elec. Guitar" \italic "(sounding 8vb)" } d fis a } \\ { r4 d,,_\markup { \box "French Horn" } fis a } >> %33-40
+  << { b'2. a8 g a4 d,2 e16 d cis d g2. fis8 e fis1 e2 e8 fis g a a4 d2 d,4 e2. fis8 g fis1 } \\ { R1*2 a,,2_\markup { \box "Chimes" } e' d1 R1*3 fis4_\markup { \box "French Horn" } e2 d4 } >> %41-48
   
 }
 
@@ -32,6 +33,8 @@ left = \relative c' {
   R1*7 r4 d,-> e-> fis-> \bar "||" %9-16
   R1*8 \bar "||" %17-24
   R1*8 \bar "||" %25-32
+  R1*8 \bar "||" %33-40
+  << { R1 r4 d->^\markup { \box "F.Hn. + Timp." \italic "(FH sounding 8va)" } a'-> d,-> a1-> R1*4 d1:32^\markup { \box "Timpani" } } \\ { R1*3 d,4_\markup { \box "Trombones/Tubas" \italic "sempre marcato e pesante" } cis e d g,2 a d b a1 d }  >> \bar "||" %41-48
   
 }
 
