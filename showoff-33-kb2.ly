@@ -25,7 +25,7 @@ right = \relative c'' {
   d2) cis8( b cis d) cis4( fis,2) a4( b) r \tuplet 3/2 { fis'4( d fis } a1\<) R1*3\! << { r2 cis,8^\markup { \box "Elec. Guitar" \italic "(sounding 8vb)" } d fis a } \\ { r4 d,,_\markup { \box "French Horn" } fis a } >> %33-40
   << { b'2. a8 g a4 d,2 e16 d cis d g2. fis8 e fis1 e2 e8 fis g a a4 d2 d,4 e2. fis8 g fis1 } \\ { R1*2 a,,2_\markup { \box "Chimes" } e' d1 R1*3 fis4_\markup { \box "French Horn" } e2 d4 } >> %41-48
   r4 \tuplet 3/2 { <d d'>8^\markup { \box "Trumpet" } <d d'> <d d'> } <d d'>2 r4 \tuplet 3/2 { <d d'>8 <d d'> <d d'> } <d d'>2 R1*6 %49-56
-  b''2^\markup { \box "Piccolo" } cis4 b8 cis d4 e fis g f8 e8 ~ e2 \breathe d4 << { d1 ~ d ~ d\fermata } \\ { d,1_\markup { \box "Chimes" }\laissezVibrer R1 R1 } >> %57-62
+  b''2^\markup { \box "Piccolo" } cis4 b8 cis d4 e fis g fis8 e8 ~ e2 \breathe d4 << { d1 ~ d ~ d\fermata } \\ { d,1_\markup { \box "Chimes" }\laissezVibrer R1 R1 } >> %57-62
   
 }
 
