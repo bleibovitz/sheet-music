@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \header {
-  title = "33. Anthem"
+  title = "36. Anthem"
   subtitle = "(Chess)"
   copyright = "2/22/19"
   tagline = ##f
@@ -37,8 +37,8 @@ left = \relative c' {
   R1*8 \bar "||" %25-32
   R1*8 \bar "||" %33-40
   << { R1 r4 d->^\markup { \box "F.Hn. + Timp." \italic "(FH sounding 8va)" } a'-> d,-> a1-> R1*4 d1:32^\markup { \box "Timpani" } } \\ { R1*3 d,4_\markup { \box "Trombones/Tubas" \italic "sempre marcato e pesante" } cis e d g,2 a d b a1 d }  >> \bar "||" %41-48
-  R1*2 <a d' e>2^\markup { \box "Trombones" \italic "(sounding 8va)" } <a cis' e> << { <e'' fis>1 } \\ { cis,,2_"C#" c2_"C" } >> << { g'''4 d } \\ { <g,, b'>2 } >> <g' a cis> <fis d'>4 << { <cis e'> <d fis'> < g, g''> d''2 cis4 } \\ { a2 b4 <a, e'>2. } >> <a g' d'>4 <b fis' d'>1 %49-56
-  R1 d'4 a d g, a2.:32 \breathe a4 d1:32 ~ d1:32 ~ d1:32\fermata_\markup { \bold "ATTACCA" } \bar "|." %57-62
+  R1*2 <a d' e>2^\markup { \box "Trombones" \italic "(sounding 8va)" } <a cis' e> << { <e'' fis>1 } \\ { cis,,2_"C#" c2_"C" } >> << { g'''4 d } \\ { <g,, b'>2_"G" } >> <g' a cis> <fis d'>4 << { <cis e'> <d fis'> < g, g''> d''2 cis4 } \\ { a2 b4 <a, e'>2. } >> <a g' d'>4 <b fis' d'>1 %49-56
+  R1 d'4^\markup { \box "Timpani" } a d g, a2.:32 \breathe a4 d1:32 ~ d1:32 ~ d1:32\fermata_\markup { \bold "ATTACCA" } \bar "|." %57-62
   
 }
 
