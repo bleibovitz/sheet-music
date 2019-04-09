@@ -3,7 +3,7 @@
 \header {
   title = "36. Anthem"
   subtitle = "(Chess)"
-  copyright = "2/22/19"
+  copyright = "4/09/19"
   tagline = ##f
 }
 
