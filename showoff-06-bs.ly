@@ -26,5 +26,5 @@ global = {
   \repeat percent 4 { a4. d8 d4 d, } \repeat percent 3 { g4. d'8 d4 d,\< } g4.\mf d'8 g,4 r \break %73-80
   \repeat percent 4 { c,4.\p g'8 g4 g, } \bar "||" \tempo "Verse 4" \repeat percent 6 { c4. g'8 g4 g, } a4. e''8 e4 e, a4. e'8 e4 a,4 \break %81-92
   \repeat percent 4 { a4. d8 d4 d,\< } g4. d'8 d d,8\ff g r r d g, r r2 \bar "||" \break %93-98
-  \tempo "\"Sunday Clothes\"" \repeat percent 5 { c4. g'8 g4 g,_"accel." | } d'4_"DIRECT SEGUE" d d d \bar "|." %Sunday Clothes Extension
+  \tempo "\"Sunday Clothes\" starts" \repeat percent 5 { c4. g'8 g4 g,_"accel." | } d'4_"DIRECT SEGUE" d d d \bar "|." %Sunday Clothes Extension
 }
