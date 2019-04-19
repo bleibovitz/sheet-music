@@ -21,7 +21,7 @@ global = {
   \mark "B" \tempo "SLOW" R2.*10 \breathe \bar "||" \break
   \mark "C" \time 4/4 \tempo "Start slow, gradually accel."
      <bd hh>4_"(or some other kind of boom-chick thing)" <sn hh> <bd hh> <sn hh> <>^"(Vocal)" \repeat percent 16 { <bd hh>4 <sn hh> <bd hh> <sn hh> } \bar "||" \break
-     \tempo "Very fast, in 2" \repeat percent 15 { <bd hh>4 <sn hh> <bd hh> <sn hh> } \bar "||" \break
+     \tempo "Very fast, in 2 (Chorus)" \repeat percent 15 { <bd hh>4 <sn hh> <bd hh> <sn hh> } \bar "||" \break
   \mark "D" \tempo "In 4, but still brisk" R1^"(Piano arp.)" R1*5 R1\fermataMarkup \breathe \bar "||" \break
   \mark "E" \tempo "A much more sensible tempo" \time 2/4 R2*2 <>^"(Vocal)" R2*8 <>^"(Ensemble echo)" R2*2 \breathe \bar "||" \break
   \mark "F" \time 4/4 << { R1 } \\ \new CueVoice { r2^"(Pno.)" r4^"Long" r^"a-" } >>
