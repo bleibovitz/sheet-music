@@ -29,7 +29,12 @@ global = {
   \mark "F" \time 4/4 \key es \major << { R1 } \\ \new CueVoice { bes2^"(Pno.)" bes4^"Long" bes^"a-" } >>
     \repeat unfold 3 { es2 bes'4 bes, } es2 es'4 bes, es4. es8 f4. f8 g4. g8 g4. g8 as4. as8 as4. as8 as2 as g as g g4 f g2 as g d4( g,) c1 f1 bes\fermata \breathe \bar "||" \break
   \mark "G" \tempo "Slow, then accel. a la \"Millie\"" R1_"Pno. arp."\fermataMarkup R1*16^"(Vocal in 8th notes)" \breathe \bar "||" \break
-  \mark "H" \tempo "Same as F" r2 as_"the" g_"same" as g g4 f g2 as g d4( g,) c1 f bes\fermata \breathe \bar "||"
+  \mark "H" \tempo "Same as F, slower" r2 as_"the" g_"same" as g g4 f g2 as g d4( g,) c1 f bes\fermata \breathe \bar "||"
   \mark "I" R1*17 \breathe \bar "||" \break
-  \mark "J" << {R1} \\ \new CueVoice { r4_"(Pno.)" bes, c d } >>
+  \mark "J" \tempo "Showtune 2" << {R1} \\ \new CueVoice { r4_"(Pno.)" bes, c d } >>
+    es r bes r g' r c, r f r bes, r f' r bes, r es r bes r g' r c, r f r bes, r bes' r es, r as r d, r g r c, r f r bes r es, r es r
+    as r d, r g r c, r f r r bes r2 bes4 bes,
+    es r bes r g' r c, r f r bes, r f' r bes, r es r bes r g' r c, r f r bes, r bes' r es, r
+    as r f r es r bes' r f r bes r g r c, 4 f r f r r bes r bes, \bar "||"
+  \mark "K" \time 3/4 \key des \major \tempo "Waltz, in 1"
 }
