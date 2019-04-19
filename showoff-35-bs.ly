@@ -37,7 +37,12 @@ global = {
     es r bes r g' r c, r f r bes, r f' r bes, r es r bes r g' r c, r f r bes, r bes' r es, r
     as r f r es r bes' r f r bes r g r c, 4 f r f r r bes r bes, \bar "||"
   \mark "K" \time 3/4 \key des \major \tempo "Waltz, in 1"
-    es r as d, r as' as r es as, r r 
-    des^"(Vocal)" r r e r r es r r as r r es r r as r r des, r r as' r r des, r r as' r r es r r as r r es r r as r r des, r r as' r r
-    des r r e r r es r r as r r es r r as r r ces, r r bes r r es2. e f bes es,4 r r as r r des r as des, r r
+    es r as d, r as' as r es as, r r \bar "||"
+    des^"(Vocal)" r r e r r es? r r as r r es r r as r r des, r r as' r r des, r r as' r r es r r as r r es r r as r r des, r r as' r r
+    des, r r e r r es? r r as r r es r r as r r ces, r r bes r r es2. e f bes es,4 r r as r r des r as des, r r \bar "||" \break
+  \mark "L" \time 6/8 \key es \major R2.*24 \bar "||"
+  \mark "M" \time 4/4 R1 R1\fermataMarkup R1*2 \bar "||" <>^"(Vocal)" R1*6
+    \repeat percent 4 { es4 r r2 } \break <>^"(Fem. Vocal)" \repeat percent 5 { es4 r r2 } es es \bar "||"
+    <>^"\"Grieve\"" \repeat percent 4 { c2. g'4 } \bar "||" \key g \major
+    c2. r4 c2. r4 b2. r4 bes2. r4 a2. r4 a2. r4 d2. d4 bes2_"DIRECT SEGUE" bes \bar "|."
 }
