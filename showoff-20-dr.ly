@@ -28,5 +28,5 @@ global = {
   \repeat percent 3 { <bd hh>4 <sn hh> <bd hh> <sn hh> } <bd sn> r4^"\"Whose tender brown\"" r8. hh16 hh4
   \repeat percent 2 { <bd hh>4 <sn hh> <bd hh> <sn hh> } <bd sn> r4^"\"looks\"" r8. hh16 hh4 <bd hh>^"\"A trip to the\"" r r2
   \repeat unfold 2 { hh8-. r r hh-. r4 hh8-. r R1 } hh8-. r r hh-. r4 hh8-. r bd4 r4^"\"The magic of\"" r2
-  \time 3/4 sn8 \tuplet 3/2 { sn16 sn sn } sn8 \tuplet 3/2 { sn16 sn sn } sn8 sn | sn-"DIRECT SEGUE" \tuplet 3/2 { sn16 sn sn } sn8 \tuplet 3/2 { sn16 sn sn } \tuplet 3/2 { sn sn sn } \tuplet 3/2 { sn sn sn } \breathe \bar "|."
+  \time 3/4 \tempo "Bolero" sn8 \tuplet 3/2 { sn16 sn sn } sn8 \tuplet 3/2 { sn16 sn sn } sn8 sn | sn-"DIRECT SEGUE" \tuplet 3/2 { sn16 sn sn } sn8 \tuplet 3/2 { sn16 sn sn } \tuplet 3/2 { sn sn sn } \tuplet 3/2 { sn sn sn } \breathe \bar "|."
 }
