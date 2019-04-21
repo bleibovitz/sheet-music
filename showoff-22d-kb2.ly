@@ -1,36 +1,30 @@
 \version "2.18.2"
 
 \header {
-  title = "22B. She's In Love"
+  title = "22D. She's In Love"
   subtitle = "(The Little Mermaid)"
   copyright = "4/21/19"
   tagline = ##f
 }
 
 global = {
-  \key e \major
+  \key ges \major
   \time 4/4
-  %\tempo "60s girl group pop"
+  \tempo "Key change!"
   \compressFullBarRests
   \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
 
 right = \relative c'' {
   \global
-  R1*4 r2 <e e'>8->_\markup { \box "Small Vln Section" } <cis cis'>4-> <b b'>8-> ~ <b b'>4 r r2 R1 \bar "||" R1*4
-  \repeat percent 3 { r4_\markup { \box "Pizz. Strings" }^"(Male Vocal)" <b e gis> r8 <cis e gis> r4 } r <b e gis> r8 <b d e gis> r4
-  \repeat percent 2 { r <a cis e> r8 <a cis fis> r4 } \repeat percent 2 { r4 <b e gis> r8 <cis e gis> r4 } \bar "||"
-  \repeat percent 2 { r4 <b e gis> r8 <cis e gis> r4 } r4 <b e gis> r8 <cis e gis> r4 R1
-  e2_\markup { \box "Muted Strings" }( fis gis4. a16 gis fis4 e b'1 ~ b2.) r4 dis,1 e R1*2
-  dis1 e2. <e gis>4 <cis e> <e gis> <cis e> <e gis> fis8-. fis-. fis-. fis-. fis-> r r4 \bar "|."
+  R1*3 r2 r4^\markup { \box "String Section" } r8 <es, es'> ~ \bar "||" <es es'>2.. <des des'>8 ~ <des des'>2 ges'4 f <es, es'>2.. <des des'>8 ~ <des des'>2 r
+  R1 r8 ges( as a bes des es ges ~ ges2 as bes1) R1*6 \bar "|."
 }
 
 left = \relative c' {
   \global
-  R1*4 R1*3 R1*4
-  \repeat percent 3 {e4 r8 e cis4 r} e r8 e gis,4 r \clef bass
-  \repeat percent 2 {a r8 a e4 r} \repeat percent 2 {e4 r8 e cis4 r} \clef treble
-  \repeat percent 2 {e'4 r8 e cis4 r} e4 r8 e cis 4 r8 e-> R1 R1*4 R1*4 R1*3 R1_"DIRECT SEGUE"
+  R1*4 R1 r2 ges4_\markup { \box "Tubular Bells" \italic "(sounds 8va)" } f es2 r R1
+  R1*4 R1*5 R1_"DIRECT SEGUE"
 }
 
 \score {
@@ -38,7 +32,7 @@ left = \relative c' {
     instrumentName = "KB 2"
   } <<
     \new Staff = "right" \right
-    \new Staff = "left" { \left }
+    \new Staff = "left" { \clef bass \left }
   >>
   \layout { }
 }
