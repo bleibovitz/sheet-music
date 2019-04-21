@@ -25,5 +25,7 @@ global = {
   \mark "K" c4 r f r f r f r \repeat percent 3 { bes r f r | f r f r } e r e r a r a r d r a r d, r d r g r g r g r g r c r c, r f r f r
   \mark "L" \repeat percent 7 { bes4 r f r} c' r f, r bes r f r bes r bes, r es r bes r es r bes r f' r f r bes r f r d' r f, r es' r es, r d r d r des r des r c r c r f r f r c'1 bes e,2 e a4 r r2 \bar "||" \key d \major
   \mark "M" \repeat unfold 2 { e'4 r a, r } \repeat unfold 2 { d r a r } \repeat unfold 2 { e'4 r a, r } \repeat unfold 2 { d r a r } gis r gis r cis, r cis r fis r cis r fis r cis r b r b r b r b r e r b r e, r b' r c1 f4 r f r \bar "||" \key bes \major
-  \mark "N" \repeat percent 8 {bes4 r f r } bes r bes r bes, r bes r es r bes r es r c2 f4 r f r c' r f, r d' r f, r es' r es, r d r d r d r d r des r des r
+  \mark "N" \repeat percent 8 {bes4 r f r } bes r bes r bes, r bes r es r bes r es r c2 f4 r f r c' r f, r d' r f, r es' r es, r
+  \mark "O" d r d r d r d r des r des r des r des r c r c r c r c r b r b r b r b r c r f r d r f r es r es' r d r d, r g r d r g r g r c, r c r f r f r
+  \mark "P" \repeat percent 4 {bes r f r} c'1 c c f, bes4 r f r bes r f r f r f r f r f r f1_"DIRECT SEGUE" ~ f \bar "|."
 }
