@@ -16,8 +16,8 @@ global = {
 
 \relative c {
   \global
-  R1*4 <>^"(Vocal)" R1*7 r2 r4 b'\mp\glissando e,8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. gis-. r r4
+  R1*4 \bar "||" <>^"(Vocal)" R1*7 r2 r4 b'\mp\glissando e,8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. gis-. r r4
   a8-. r r a-. e-. r r4 a8-. r r a-. e-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4
-  gis'8 r r gis b r r4 cis8 r r cis e r r4 fis,8 r r fis b r r4 e,8 r r e gis r r4
+  \bar "||" gis'8 r r gis b r r4 cis8 r r cis e r r4 fis,8 r r fis b r r4 e,8 r r e gis r r4
   gis8 r r gis b r r4 cis8 r r cis e r r4 fis,,8 fis r4 ais8 ais r4 cis8_"DIRECT SEGUE" cis r fis b4 b, \bar "|."
 }
