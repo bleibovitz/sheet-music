@@ -9,7 +9,7 @@ global = {
   \key ges \major
   \time 4/4
   \clef bass
-  %\tempo "60s girl-group pop beat"
+  \tempo "Key change!"
   \compressFullBarRests
   \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
