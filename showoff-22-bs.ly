@@ -1,20 +1,23 @@
 \header {
-  title = "22E. Little Shop of Horrors"
-  subtitle = "(G-flat)"
-  copyright = "4/19/19"
+  title = "22. She's In Love"
+  subtitle = "(The Little Mermaid)"
+  copyright = "4/21/19"
   tagline = ##f
 }
 
 global = {
-  \key ges \major
+  \key e \major
   \time 4/4
   \clef bass
-  %\tempo "Rubato"
+  \tempo "60s girl-group pop beat"
   \compressFullBarRests
   \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
 
 \relative c {
   \global
-  \repeat unfold 3 { ges8-> r r4 r ges8 aes-> r4 r8 des-> r4 des8-> r } des8-> r r d ~ d d4 d8 d1\fermata R1^"(Pno.)"_"DIRECT SEGUE" \bar "|."
+  R1*4 <>^"(Vocal)" R1*7 r2 r4 b'\mp\glissando e,8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. gis-. r r4
+  a8-. r r a-. e-. r r4 a8-. r r a-. e-. r r4 e8-. r r e-. cis-. r r4 e8-. r r e-. cis-. r r4
+  gis'8 r r gis b r r4 cis8 r r cis e r r4 fis,8 r r fis b r r4 e,8 r r e gis r r4
+  gis8 r r gis b r r4 cis8 r r cis e r r4 fis,,8 fis r4 ais8 ais r4 cis8_"DIRECT SEGUE" cis r fis b4 b, \bar "|."
 }
