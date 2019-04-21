@@ -21,7 +21,7 @@ global = {
   \mark "G" \repeat percent 15 { bd_"(or some similar boom-chick thing)" sn bd sn } <bd sn> r r2
   \mark "H" \repeat percent 15 { bd4 sn bd sn } <bd sn> r r2 \repeat percent 3 { bd4 sn bd sn } <bd sn> r <bd sn> r \bar "||"
   \mark "I" <>^"Chorus" \repeat percent 18 { bd4 sn bd sn }
-  \mark "J" <>^"Chorus 2" \repeat percent 18 { bd4 sn bd sn } <bd sn> r r2 \bar "||"
+  \mark "J" <>^"Chorus 2" \repeat percent 17 { bd4 sn bd sn } <bd sn> r r2 \bar "||"
   \mark "K" <>^"tipped his HAT" \repeat percent 16 { bd4 sn bd sn }
   \mark "L" <>^"Chorus" \repeat percent 23 { bd4 sn bd sn } <bd sn> r r2 \bar "||" }
   \mark "M" \repeat unfold 2 { e'4 r a, r } \repeat unfold 2 { d r a r } \repeat unfold 2 { e'4 r a, r } \repeat unfold 2 { d r a r } gis r gis r cis, r cis r fis r cis r fis r cis r b r b r b r b r e r b r e, r b' r c1 f4 r f r \bar "||" \key bes \major
