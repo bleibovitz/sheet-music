@@ -35,7 +35,7 @@ left = \relative c, {
   \global
   R1 R1*4 R1*2 R1 R1*3 R1 %106-113
   R1*2 R1*3 R2*1 R1 %114-120
-  R1*8 R1*6 R1*6 R1*8
+  R1*8 R1*6 R1*6 R1*7 R1
   <c c'>4-> <cis cis'>4-> <d d'>4-> <dis dis'>4-> <e e'>4-> <f f'>4-> <fis fis'>4-> <g g'>4->
   <gis gis'>4-> <a a'>4-> <bes bes'>4-> <as as'>4-> <g g'>4-> r r <c, c'>4->
 }
