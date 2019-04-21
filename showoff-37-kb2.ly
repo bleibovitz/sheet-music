@@ -26,16 +26,18 @@ right = \relative c'' {
   R1_"a tempo" <f b e g>4 r4 r2 R1*2 <d f a c>4-^ r4 r2 <dis fis a c>4 r r2 <a c e a>4-^ r r2 <a cis e a>4-^ r r2
   R1*2_\markup { \box "Saxes" } \repeat unfold 2 { r4 <g a c e>4-^ <es ges bes c>2-> <f a b d>8-> <f a b d>4-> <f a b d>8-> ~ <f a b d> <f a b d>4.-> }
   r4 <g a c e>4-^ <es ges bes c>2-> <f a b d>4-^ \repeat unfold 4 {r8\fermata} r4\fermata \break
-  \tempo "Faster, in 2" r2 r8. dis'16 e8. a16 g8. dis16 e8. g16 r2 r2 r8. dis16 e8. c'16 a8. d16 a8. d,16 r2 R1*2
+  \tempo "Faster, in 2" r2 r8. dis'16 e8. a16 g8. dis16 e8. g16 r2 r2 r8. dis16 e8. c'16 a8. d16 a8. d,16 r2 R1*2\<
   \repeat unfold 2 { << {c'4-^ g8 a8-> ~ a g a4-^ } \\ { <c, e>4. es8 ~ es4 es } >> }
-  \repeat unfold 4 {<e c'>4\< <es a> } <e c'> <es a>8 <e c'> ~ <e c'> <es a> <e c'>4 <f b dis g>\ff->
+  \repeat unfold 4 {<e c'>4 <es a> } <e c'> <es a>8 <e c'> ~ <e c'> <es a> <e c'>4 <f b dis g>\ff-> r r <c' c'>-> \bar "|."
 }
 
-left = \relative c' {
+left = \relative c, {
   \global
   R1 R1*4 R1*2 R1 R1*3 R1 %106-113
   R1*2 R1*3 R2*1 R1 %114-120
   R1*8 R1*6 R1*6 R1*8
+  <c c'>4-> <cis cis'>4-> <d d'>4-> <dis dis'>4-> <e e'>4-> <f f'>4-> <fis fis'>4-> <g g'>4->
+  <gis gis'>4-> <a a'>4-> <bes bes'>4-> <as as'>4-> <g g'>4-> r r <c, c'>4->
 }
 
 \score {
