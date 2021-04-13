@@ -8,9 +8,11 @@
 
 \score {
   \relative c {
+    \override Staff.TimeSignature.break-visibility =##( #f #t #t )
+    \set Staff.explicitClefVisibility = #end-of-line-invisible
     \clef bass
     \tempo "Man: Rubato"
-    << { a'2 c c b\fermata g b b a\fermata a c c b\fermata g b g fis?\fermata \bar ":|." \break } \\
+    << { a'2( c c b) g( b b a) a( c c b) g( b g fis?) \bar ":|." \break } \\
     { <<f,1 c'>> <g d'> <e b'> <<f c'>> <<f, c'>> <<g d'>> <e, b'> <d a' a'> } >>
     \tempo "Patchface"
     \time 5/4
