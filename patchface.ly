@@ -1,5 +1,5 @@
 \header {
-  dedication = "for Allswell Productions"
+  dedication = "Allswell Productions presents"
   title = "Patchface"
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
@@ -22,7 +22,7 @@ cueIlower = \relative c' {
 }
 \score {
   \header {
-    piece = \markup { CUE 1. \italic { Patchface: The year is 1969 } }
+    piece = \markup { \bold { CUE 1. } \italic { Patchface: The year is 1969 } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -39,7 +39,7 @@ cueIIupper = \relative c'' {
   \time 2/2
   \tempo "Rubato" 2 = 40
   \partial 4
-  g4\fermata(\bar ".|:" | g'1~ \time 3/2 g) \tuplet 3/2 { f4( g a } | \time 2/2 g1 ~ | \time 3/2 g ~ g4) g,( | \time 2/2 g'1~ \time 3/2 g) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g \bar ":|."
+  g4\fermata \mf(\bar ".|:" | g'1~ \time 3/2 g) \tuplet 3/2 { f4( g a } | \time 2/2 g1 ~ | \time 3/2 g ~ g4) g,( | \time 2/2 g'1~ \time 3/2 g) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g \bar ":|."
 }
 cueIIlower = \relative c {
   \clef bass
@@ -51,7 +51,7 @@ cueIIlower = \relative c {
 }
 \score {
   \header {
-    piece = \markup { CUE 2. \italic { Man: The year is 1969 } }
+    piece = \markup { \bold { CUE 2. } \italic { Man: The year is 1969 } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -69,7 +69,7 @@ cueIIIupper = \relative c' {
   \textLengthOn
   \override NoteHead.style = #'harmonic
   \set glissandoMap = #'((0 . 1))
-  <f a>1_\markup { \left-column { "A=440" "F=349.228=350" } }\f \> ~ \fermata \glissando \bar ".|:"  \textLengthOff
+  <f a>1_\markup { \left-column { "A=440" \line { "F=349.228" \char ##x2248 "350" } } }\f \> ~ \fermata \glissando \bar ".|:"  \textLengthOff
   \time 5/4 \tempo 4 = 57 \revert NoteHead.style
   \repeat percent 7 {<d g a>4\mp <d g a> <d g a> <d g a> <d g a>} <c g' b>^"(vamp)" <c g' b> <c g' b> <c g' b> <c g' b> \bar ":|."
 }
@@ -82,7 +82,7 @@ cueIIIlower = \relative c' {
 }
 \score {
   \header {
-    piece = \markup { CUE 3. \italic { Dial tone } }
+    piece = \markup { \bold { CUE 3. } \italic { Dial tone } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
