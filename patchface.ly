@@ -67,10 +67,11 @@ cueIIIupper = \relative c' {
   \key g \major
   \time 4/4
   \textLengthOn
-  \override NoteHead.style = #'harmonic
+  \once \override NoteHead.style = #'harmonic
+  \once \override Glissando.style = #'trill
   \set glissandoMap = #'((0 . 1))
   <f a>1_\markup { \left-column { "A=440" \line { "F=349.228" \char ##x2248 "350" } } }\f \> ~ \fermata \glissando \bar ".|:"  \textLengthOff
-  \time 5/4 \tempo 4 = 57 \revert NoteHead.style
+  \time 5/4 \tempo 4 = 57
   \repeat percent 7 {<d g a>4\mp <d g a> <d g a> <d g a> <d g a>} <c g' b>^"(vamp)" <c g' b> <c g' b> <c g' b> <c g' b> \bar ":|."
 }
 cueIIIlower = \relative c' {
