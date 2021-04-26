@@ -64,11 +64,34 @@ cueIIlower = \relative c {
 % ---------- CUE 03 ----------
 cueIIIupper = \relative c' {
   \clef treble
-  \key g major
+  \key g \major
   \time 4/4
-  <f a>1^"440"_"350"
+  \textLengthOn
+  \override NoteHead.style = #'harmonic
+  \set glissandoMap = #'((0 . 1))
+  <f a>1_\markup { \left-column { "A=440" "F=349.228=350" } }\f \> ~ \fermata \glissando \bar ".|:"  \textLengthOff
+  \time 5/4 \tempo 4 = 57 \revert NoteHead.style
+  \repeat percent 7 {<d g a>4\mp <d g a> <d g a> <d g a> <d g a>} <c g' b>^"(vamp)" <c g' b> <c g' b> <c g' b> <c g' b> \bar ":|."
 }
-\new Staff { \cueIIIupper }
+cueIIIlower = \relative c' {
+  \clef bass
+  \key g \major
+  \time 4/4 s1
+  \time 5/4
+  g1~^\mf g4 fis1~ fis4 e1~ e4 fis1~ fis4 g1~ g4 fis1~ fis4 e1~ e4 c1~ c4
+}
+\score {
+  \header {
+    piece = \markup { CUE 3. \italic { Dial tone } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueIIIupper
+    \new Staff = "lower" \cueIIIlower
+  >>
+  \layout { }
+  \midi { }
+}
 %{
 ---------- THEMES ----------
 \score {
