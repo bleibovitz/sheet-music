@@ -39,14 +39,14 @@ cueIIupper = \relative c'' {
   \time 2/2
   \tempo "Rubato" 2 = 40
   \partial 4
-  g4\fermata \mf(\bar ".|:" | g'1~ \time 3/2 g) \tuplet 3/2 { f4( g a } | \time 2/2 g1 ~ | \time 3/2 g ~ g4) g,( | \time 2/2 g'1~ \time 3/2 g) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g \bar ":|."
+  g4\fermata \mf(\bar ".|:" | g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1 ~ | \time 3/2 g ~ g4\fermata) g,( | \time 2/2 g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g \bar ":|."
 }
 cueIIlower = \relative c {
   \clef bass
   \key c \major
   \time 2/2
   \partial 4
-  s4 \bar ".|:" << { a'2( c \time 3/2 c b~ b\fermata) \time 2/2 g( b \time 3/2 b a~ a\fermata) \time 2/2 a( c \time 3/2  c b~ b\fermata) \time 2/2 g( b g fis\fermata) \bar ":|." } \\
+  s4 \bar ".|:" << { a'2( c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~\fermata a) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) \bar ":|." } \\
     { <<f,1 c'>> <g d'>1. <e b'>1 <f c'>1. <f c'>1 <g d'>1. <e b'>1 <d a' a'> } >>
 }
 \score {
