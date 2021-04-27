@@ -93,6 +93,32 @@ cueIIIlower = \relative c' {
   \layout { }
   \midi { }
 }
+% ---------- CUE 04 ----------
+cueIVupper = \relative c' {
+  \clef treble
+  \key c \major
+  \time 2/2
+  <e e'>1\arpeggio\mf <d d'>\arpeggio ~ <d d'> \time 3/2 <c c'>_\markup { \italic { sim. } } <d d'>2 \time 2/2 <e e'>1 <d d'> ~ \time 3/2 <d d'>\> <c c'>2 \time 2/2 <a a'>1\!\p \bar "|."
+}
+cueIVlower = \relative c {
+  \clef bass
+  \key c \major
+  \time 2/2
+  << { a'2( c c b) g( b \time 3/2 b a~\fermata a) \time 2/2 a( c c b) \time 3/2 g( b ~ b \time 2/2 g fis\fermata) \bar "|." } \\
+    { <<f,1 c'>> <g d'> <e b'> <f c'>1. <f c'>1 <g d'> <e b'>1. <d a' a'>1 } >>
+}
+\score {
+  \header {
+    piece = \markup { \bold { CUE 4. } \italic { I start imagining her } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueIVupper
+    \new Staff = "lower" \cueIVlower
+  >>
+  \layout { }
+  \midi { }
+}
 %{
 ---------- THEMES ----------
 \score {
