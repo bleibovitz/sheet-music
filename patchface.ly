@@ -1,10 +1,10 @@
 \header {
   dedication = "Allswell Productions presents"
-  title = "Patchface"
+  title = \markup { \bold \caps Patchface }
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = ##f
+  tagline = "v.1 - last updated 2021/04/28"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -22,7 +22,7 @@ cueIlower = \relative c' {
 }
 \score {
   \header {
-    piece = \markup { \bold { CUE 1. } \italic { Patchface: The year is 1969 } }
+    piece = \markup { \bold \caps { Cue 1. } \italic { Patchface: The year is 1969 } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -51,7 +51,7 @@ cueIIlower = \relative c {
 }
 \score {
   \header {
-    piece = \markup { \bold { CUE 2. } \italic { Man: The year is 1969 } }
+    piece = \markup { \bold \caps { Cue 2. } \italic { Man: The year is 1969 } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -83,7 +83,7 @@ cueIIIlower = \relative c' {
 }
 \score {
   \header {
-    piece = \markup { \bold { CUE 3. } \italic { Dial tone } }
+    piece = \markup { \bold \caps { Cue 3. } \italic { Dial tone } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -109,7 +109,7 @@ cueIVlower = \relative c {
 }
 \score {
   \header {
-    piece = \markup { \bold { CUE 4. } \italic { I start imagining her } }
+    piece = \markup { \bold \caps { Cue 4. } \italic { I start imagining her } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -119,8 +119,51 @@ cueIVlower = \relative c {
   \layout { }
   \midi { }
 }
-%{
----------- THEMES ----------
+% ---------- CUE 05 ----------
+cueVupper = \relative c''' {
+  \clef treble
+  \tempo "Tenderly" 4 = 95 << { a2( c c b) g( b b^"repeat if time allows" a) \bar ":|.|:" \tempo "Warm, gathering momentum" a,( c c b) g( b b^"repeat if time allows" a) \bar ":|.|:" \tempo "Grand, a bit faster" 4 = 105 a( c c b) g( b b^"vamp until cutoff" a) \bar ":|." } \\
+    { <c d>1\p \repeat unfold 3 { <c d> } <c, d>\mf \repeat unfold 3 { <c d> } r8\f c( f a) r8 c,( f a) \repeat unfold 2 { r c, e g } \repeat unfold 2 { r c, d f } \repeat unfold 2 { r c e g } } >>
+}
+cueVlower = \relative c' {
+  \clef bass
+  f1 e d e f, e d e2. ~ << { \stemUp e4^"1x" } \new CueVoice { \stemDown c4_"2x" } >> f,8( c' f a c2) e,,8( c' e g c2) d,,8( a' d f a2) e,8( c' e g c4) c,
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 5. } \italic { Write this down } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueVupper
+    \new Staff = "lower" \cueVlower
+  >>
+  \layout { }
+  \midi { }
+}
+% ---------- CUE 06 ----------
+cueVI = \transpose g d' {
+  \relative c'' {
+    \partial 4
+    \key c \major
+    \tempo "Largo e molto rubato"
+      g4( \repeat percent 3 { g'2.) \tuplet 3/2 { f8( g a } g2.) g,4\laissezVibrer } g'1 \acciaccatura { f16 e } c1 \bar "|."
+  }
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 6. } \italic { There is one dream } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueVI
+    %\new Staff = "lower" \cueVlower
+  >>
+  \layout { }
+  \midi { }
+}
+% ---------- THEMES ----------
+\pageBreak
 \score {
   \relative c {
     \override Staff.TimeSignature.break-visibility =##( #f #t #t )
@@ -145,7 +188,10 @@ cueIVlower = \relative c {
     \omit BarNumber
     }
   }
+  \header {
+    piece = \markup { \bold \caps Themes. }
+  }
   \midi {}
 }
----/THEMES---
-%}
+% ---------- NOTES ----------
+\markup { \bold \caps { Program Notes. } }
