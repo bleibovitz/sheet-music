@@ -195,7 +195,7 @@ cueVIIIupper = \relative c'' {
 cueVIIIthird = \relative c'' {
   \partial 4
   \tempo "Poco rubato" 4 = 90
-  g4(\mp g'1 g2) \tuplet 3/2 { f4( g a } g1 ~ g2.) g,4( g'1 ~ g) f8( e c4 ~ c2 ~ c1)
+  g4(\mp g'1 ~ g2) \tuplet 3/2 { f4( g a } g1 ~ g2.) g,4( g'1 ~ g) f8( e c4 ~ c2 ~ c1)
 }
 cueVIIIlower = \relative c {
   \clef bass
@@ -251,4 +251,12 @@ cueVIIIlower = \relative c {
   \midi {}
 }
 % ---------- NOTES ----------
-\markup { \bold \caps { Program Notes. } }
+\markup { \bold \caps { Notes from the Composer. } }
+% ---------- CUE NOTES ----------
+\markup { \bold \caps { Notes for Cues and Editing. } }
+% ---------- PATCHES ----------
+\markup { \bold \caps { Patch Instructions. } }
+% ---------- BIO ----------
+\markup { \bold \caps { About the Composer. } }
+% ---------- CHANGELOG ----------
+\markup { \bold \caps { Change Log. } }
