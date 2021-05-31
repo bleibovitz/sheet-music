@@ -1,10 +1,10 @@
 \header {
   dedication = "Allswell Productions presents"
-  title = \markup { \bold \caps Patchface }
+  title = \markup { \caps Patchface }
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = "v.1 - last updated 2021/04/28"
+  tagline = "v.1 - last updated 2021/05/31"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -159,7 +159,30 @@ cueVI = \transpose g d' {
     \new Staff = "upper" \cueVI
     %\new Staff = "lower" \cueVlower
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+% ---------- CUE 07 ----------
+cueVIIupper = \relative c'' {
+  \time 5/4
+  \tempo "Tense" 4 = 57
+  <c f g>4\p <c f g> <c f g> <c f g> <c f g> \bar ":|.|:" \tempo "Safety" \time 1/4 <c f g>_"his" \bar ":|."
+  \time 4/4 << { r4 r r r\fermata } \\ { s8_\markup { \underline "voice" } s_"his" s8_\markup { \underline "sound" } s_"his" s8_\markup { \underline "pulse" } s_"his" s4_\markup { \underline "patterns" } \bar "|." } >>
+}
+cueVIIlower = \relative c' {
+  \clef bass
+  r2 r r4 r << { aes^\mp ces ces( bes)\fermata } \\ { <f, c'> <aes ees'> <ges des'>2 } >> 
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 7. } \italic { And I keep calling } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueVIIupper
+    \new Staff = "lower" \cueVIIlower
+  >>
+  \layout { ragged-right = ##f }
   \midi { }
 }
 % ---------- THEMES ----------
