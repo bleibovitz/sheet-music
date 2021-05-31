@@ -46,7 +46,7 @@ cueIIlower = \relative c {
   \key c \major
   \time 2/2
   \partial 4
-  s4 \bar ".|:" << { a'2( c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~\fermata a) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) \bar ":|." } \\
+  r4\fermata \bar ".|:" << { a'2( c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~\fermata a) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) \bar ":|." } \\
     { <<f,1 c'>> <g d'>1. <e b'>1 <f c'>1. <f c'>1 <g d'>1. <e b'>1 <d a' a'> } >>
 }
 \score {
@@ -183,6 +183,38 @@ cueVIIlower = \relative c' {
     \new Staff = "lower" \cueVIIlower
   >>
   \layout { ragged-right = ##f }
+  \midi { }
+}
+% ---------- CUE 08 ----------
+cueVIIIupper = \relative c'' {
+  \partial 4
+  r4 | << { a2( c c b4) r g2( b b a4) r a2( c c b4) r g2( b ~ b1) } \\ { \repeat unfold 3 { <c, d>1 <c d>2. r4 } <c d>1 ~ <c d> } >>
+  \tempo "Più lento, con rubato" 4 = 65
+  R1 r2 r2 \tuplet 3/2 { f'4( g a } \bar ".|:" | \time 2/2 g1 ~ | \time 3/2 g ~ g4\fermata) g,( | \time 2/2 g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g( g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a) } \bar ":|."
+}
+cueVIIIthird = \relative c'' {
+  \partial 4
+  \tempo "Poco rubato" 4 = 90
+  g4( g'1 g2) \tuplet 3/2 { f4( g a } g1 ~ g2.) g,4( g'1 ~ g) f8( e c4 ~ c2 ~ c1)
+}
+cueVIIIlower = \relative c {
+  \clef bass
+  \partial 4
+  r4 | f1 e d e f e d a2( g) \bar "||"
+  << { a'2( c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~\fermata a) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) a2( c \time 3/2 c b~\fermata b) \bar ":|." } \\
+    { <f, c'>1 <g d'>1. <e, e' b'>1_"play pedal notes 2x on" <f f' c'>1. <f f' c'>1 <g g' d'>1. <e e' b'>1 <d d' a' a'> <f f' c'>1_"play pedal notes" <g g' d'>1. } >>
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 8. } \italic { I want so badly to see her } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff \cueVIIIthird
+    \new Staff = "upper" \cueVIIIupper
+    \new Staff = "lower" \cueVIIIlower
+  >>
+  \layout { }
   \midi { }
 }
 % ---------- THEMES ----------
