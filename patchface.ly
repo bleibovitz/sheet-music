@@ -4,7 +4,7 @@
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = "v.1 - last updated 2021/05/31"
+  tagline = "v.1 - last updated 2021/06/01"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -219,6 +219,9 @@ cueVIIIlower = \relative c {
   \layout { }
   \midi { }
 }
+% ---------- CUE 09 ----------
+% ---------- CUE 10 ----------
+% ---------- CUE 11 ----------
 % ---------- CUE 12 ----------
 cueXIIupper = \relative c'' {
   \clef treble
@@ -249,6 +252,7 @@ cueXIIlower = \relative c' {
   \layout { }
   \midi { }
 }
+% ---------- CUE 13 ----------
 % ---------- THEMES ----------
 \pageBreak
 \score {
@@ -287,6 +291,22 @@ cueXIIlower = \relative c' {
 % ---------- PATCHES ----------
 \markup { \bold \caps { Patch Instructions. } }
 % ---------- BIO ----------
-\markup { \bold \caps { About the Composer. } }
+\markup {
+  \column {
+    \line { \bold \caps { About the Composer. } }
+    \justify { Ben Leibovitz (M.A., B.Mus.) has been an active musician from an early age, starting piano lessons when he was eight years old. He wrote his first composition when he was 9. While pursuing his studies on the piano, Ben started learning the French horn through his middle school band program, and continued his studies on the horn through high school. }
+    \hspace #0
+    \justify { Ben was a student at the Don Wright Faculty of Music at Western University, where he continued his studies on the French horn under Derek Conrod. Through his undergraduate degree, Ben's interests shifted towards studying music theory while pursuing performance opportunities in musical theatre in the London, ON community, with both on- and off-campus organizations. Ben received his Bachelor of Music (Honors Music Theory with distinction) in 2016. He elected to continue his studies in music theory at the graduate level at Western University, also while continuing his extracurricular interest in musical theatre performance. With particular research interests in the analysis of works by J.S. Bach, as well as in systems of tuning and temperament, Ben received his Master of Arts in Music Theory from Western University in 2018. }
+    \hspace #0
+    \justify { From an early age, Ben has been captivated by musical theatre, not only as a spectacle within itself, but also as a medium which combines two of his favourite art forms. Though he was an active participant onstage for community theatre plays in his youth, it was not until his university years that he entered into performing musical theatre - not as an actor, but as a musician. Since 2013, Ben has worked as a pit musician and music director for a variety of theatre companies in the London area, bringing his expertise in music analysis and function to enhance the musical content of the performance. }
+    \hspace #0
+    \justify { Ben currently resides in London, ON, and remains an active participant in the local musical theatre community. }
+  }
+}
 % ---------- CHANGELOG ----------
-\markup { \bold \caps { Change Log. } }
+\markup {
+  \column {
+    \line { \bold \caps { Change Log. } }
+    \line { "v.1.0 - 2021/06/01 - initial version." }
+  }
+}
