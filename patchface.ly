@@ -190,7 +190,7 @@ cueVIIIupper = \relative c'' {
   \partial 4
   r4 | << { a2(_\mp c c b4) r g2( b b a4) r a2( c c b4) r g2( b ~ b1) } \\ { \repeat unfold 3 { <c, d>1 <c d>2. r4 } <c d>1 ~ <c d> } >>
   \tempo "Più lento, con rubato" 4 = 65
-  R1 r2 r2 \tuplet 3/2 { f'4( g a } \bar ".|:" | \time 2/2 g1 ~ | \time 3/2 g ~ g4\fermata) g,( | \time 2/2 g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g( g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4(^"(vamp and fade)" g a) } \bar ":|."
+  R1 r2 r2\fermata \tuplet 3/2 { f'4( g a } \bar ".|:" | \time 2/2 g1 ~ | \time 3/2 g ~ g4\fermata) g,( | \time 2/2 g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g( g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4(^"(vamp and fade)" g a) } \bar ":|."
 }
 cueVIIIthird = \relative c'' {
   \partial 4
@@ -215,6 +215,36 @@ cueVIIIlower = \relative c {
       \new Staff = "upper" \cueVIIIupper
       \new Staff = "lower" \cueVIIIlower
     >>
+  >>
+  \layout { }
+  \midi { }
+}
+% ---------- CUE 12 ----------
+cueXIIupper = \relative c'' {
+  \clef treble
+  \tempo "Sparse" 4 = 50
+  \time 5/4
+  \key g \major
+  <a g'>1\p ~ <a g'>4 <a fis'>1 ~ <a fis'>4 <a e'>1 ~ <a e'>4 <a fis'>1 ~ <a fis'>4 <a g'>1 ~ <a g'>4 <a fis'>1 ~ <a fis'>4 <a e'>1 ~ <a e'>4 <b e>1 ~ <b e>4 \bar ".|:"
+  \repeat percent 7 {<d, g a>4\pp <d g a> <d g a> <d g a> <d g a>} <c g' b>^"repeat only if needed" <c g' b> <c g' b> <c g' b> <c g' b> \bar ":|."
+  <d g a>^"vamp, long fade to nothing"\> <d g a> <d g a> <d g a> <d g a>\! \bar ":|."
+}
+cueXIIlower = \relative c' {
+  \clef bass
+  \time 5/4
+  \key g \major
+  \repeat unfold 7 { <g d'>1 ~ <g d'>4 } <g c>1 ~ <g c>4 \bar ".|:"
+  g1^\mf ~ g8 a16 g fis1 ~ fis8 g16 fis e1 ~ e8 d16 e fis1 ~ fis8 e16 fis g1 ~ g8 a16 g fis1 ~ fis8 g16 fis e1 ~ e8 d c1 ~ c4 ~ \bar ":|.|:"
+  c1 ~ c4\laissezVibrer \bar ":|."
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 12. } \italic { And I should have known } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueXIIupper
+    \new Staff = "lower" \cueXIIlower
   >>
   \layout { }
   \midi { }
