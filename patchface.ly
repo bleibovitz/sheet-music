@@ -294,6 +294,7 @@ cueXIIlower = \relative c' {
 \markup {
   \column {
     \line { \bold \caps { About the Composer. } }
+    %\hspace #0
     \justify { Ben Leibovitz (M.A., B.Mus.) has been an active musician from an early age, starting piano lessons when he was eight years old. He wrote his first composition when he was 9. While pursuing his studies on the piano, Ben started learning the French horn through his middle school band program, and continued his studies on the horn through high school. }
     \hspace #0
     \justify { Ben was a student at the Don Wright Faculty of Music at Western University, where he continued his studies on the French horn under Derek Conrod. Through his undergraduate degree, Ben's interests shifted towards studying music theory while pursuing performance opportunities in musical theatre in the London, ON community, with both on- and off-campus organizations. Ben received his Bachelor of Music (Honors Music Theory with distinction) in 2016. He elected to continue his studies in music theory at the graduate level at Western University, also while continuing his extracurricular interest in musical theatre performance. With particular research interests in the analysis of works by J.S. Bach, as well as in systems of tuning and temperament, Ben received his Master of Arts in Music Theory from Western University in 2018. }
