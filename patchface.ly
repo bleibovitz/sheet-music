@@ -4,7 +4,7 @@
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = "v.1 - last updated 2021/06/01"
+  tagline = "v.1 - last updated 2021/06/02"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -285,7 +285,64 @@ cueXIIlower = \relative c' {
   \midi {}
 }
 % ---------- NOTES ----------
-\markup { \bold \caps { Notes from the Composer. } }
+\markuplist { 
+  \justified-lines { \bold \caps { Notes from the Composer. } }
+  \justified-lines {
+    The music listed in the previous pages is intended for use throughout a new Canadian play called \italic Patchface, written by Camille Intson. These paragraphs indicate my thoughts as I composed, and act as "me \"showing my work\" in" the compositional process.
+  }
+  \justified-lines {
+    \caps { Man's theme. } The most influenced by "Hans Zimmer's \"Time\" of" the three, the rise-and-fall melodic contour represents the man's search for something more: there is tension and resolution in Man's arc, but it always seems to fall short of whatever goal he's seeking.
+  }
+  \justified-lines {
+    \caps { Patchface's theme. } There is a hesitancy in the continuing suspension here, almost of naivety, yet the cello-like under-melody presents a certain wisdom far greater. This theme is intentionally simple so as to be able to support the other two and let them excel, much like Patchface does in the actual show. Why 5/4? I don't know, I just liked how it sounded in groups of five, and it creates a somewhat offsetting feeling which is a nice clash with the otherwise structured theme.
+  }
+  \justified-lines {
+    \caps { Woman's theme. } This theme is directly inspired by the melody to the jazz "standard \"Blue Moon\" - I'm" unsure if Intson's reference to this was intentional, but I have taken the hint if it was. The melody is free and unmetered in most of its solo iterations - Woman may be a character being held down when we initially see her, but her character goes through a transformation as the show progresses. I wanted to show this by allowing her theme to become more untethered when she gets the chance.
+  }
+  \justified-lines {
+    \caps { Cue 1. } Nothing fancy about this yet - we're just introducing Patchface's character, so we also have to introduce her theme. Sticking to simple theme iterations in these early stages is critical for the audience to be able to make the proper connections later.
+  }
+  \justified-lines {
+    \caps { Cue 2. } As before, just simple character statements. Man and Woman are overlapped here, as they are both introduced in quick succession, and they're a couple. Any potential confusion about whose theme belongs to whom should be helped by Man's being in a lower register and Woman's being higher.
+  }
+  \justified-lines {
+    \caps { Cue 3. } The Patchface theme here is the exact same as before. Of interest is the morphing dial tone at the start of this cue. As per the Precise Tone Plan, which dictates that the North American dial tone is "a \"comfort tone\" consisting" of two frequencies: 350 Hz and 440 Hz. In equal temperament tuning, we have 440 Hz already as A4. Given that F4 is 349.228 Hz, I considered this to be an acceptable margin of error when constructing the dial tone - a simple major third would suffice.
+  }
+  \justified-lines {
+    \caps { Cue 4. } As the relationship between Man and Patchface develops, we see here Man's theme overlayed with octaves. These octaves are the under-melody from Patchface's theme. Their themes are beginning to combine, yet they are still recognizable as two separate entities.
+  }
+  \justified-lines {
+    \caps { Cue 5. } Now the themes are much more combined than in the previous cue, almost indistinguishable as separate units. The upper melody is now Man's melody, the bass contour is the under-melody belonging to Patchface, and the cluster in the middle represents the suspensions found in Patchface's accompanying figure. It's quite pretty, really, especially the end of this cue becoming much more open and cinematic in nature, only to be cut off abruptly. The two of them are developing well together, but Woman is left out.
+  }
+  \justified-lines {
+    \caps { Cue 6. } For the first time, Woman's theme is presented in its true unmetered form, unabashedly naked, as we start to catch a glimpse of Woman's inner thoughts. The metric freedom allows for more raw emotions to shine through.
+  }
+  \justified-lines {
+    \caps { Cue 7. } The opening Patchface chords are high, setting a tense mood. When Man's theme enters, it is now in a minor form. Ideally, these chords line up with Man's dialogue. Why minor chords? In consulting with director Hailey Hill, she had requested this cue be more minor, and it provides a nice development to Man's theme anyway; neither of the other two themes would really work in a minor context.
+  }
+  \justified-lines {
+    \caps { Cue 8. } This moment being one of the most climactic in the show is not lost on me. Here, we see all three themes make an entrance with each other. Woman's theme, alone, is overlayed with the Patchface-Man mixture seen in Cue 5. Eventually, Patchface's theme drops out as the conversation shifts to just between Man and Woman. Again, the gravity of this scene is conveyed now by additional octaves in Man's accompanying figure, giving this scene some additional depth and enriching the texture. I must say that I was exceptionally pleased to discover that all three themes could work together; I had originally envisioned that only two at a time would work, so to be able to have all three here was a great joy.
+  }
+  \justified-lines {
+    \caps { Cue 9. }
+  }
+  \justified-lines {
+    \caps { Cue 10. }
+  }
+  \justified-lines {
+    \caps { Cue 11. }
+  }
+  \justified-lines {
+    \caps { Cue 12. } I'll admit, I'm really proud of this cue. Opening up Patchface's theme, creating a sparse texture with held chords, and moving the melody up top creates an entirely new feel to something we should now be quite familiar with. This new feeling not only conveys the sadness that we find in this scene, but also represents change, not only in Patchface's employment, but also in the advancing of technology.
+  }
+  \justified-lines {
+    \caps { Cue 13. }
+  }
+  \justified-lines {
+    I want to conclude these (very lengthy) notes by thanking my teammates at Allswell Productions, Christine, Regine, and Hailey, for trusting me with this project, and by extension to our other projects as well. Thank you to Camille for allowing me to share in your creative space and to add my music to an already great script. Thank you also to my friends, family, and Emma, for their continued support of me and my work.
+  }
+  \caps { "-BZL, June 2021" }
+}
 % ---------- CUE NOTES ----------
 \markup { \bold \caps { Notes for Cues and Editing. } }
 % ---------- PATCHES ----------
@@ -308,6 +365,6 @@ cueXIIlower = \relative c' {
 \markup {
   \column {
     \line { \bold \caps { Change Log. } }
-    \line { "v.1.0 - 2021/06/01 - initial version." }
+    \line { "v.1 - 2021/06/02 - initial version." }
   }
 }
