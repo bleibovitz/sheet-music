@@ -274,7 +274,8 @@ cueXIIIchords = \chords {
     \new Staff = "upper" \cueXIIIupper
     %\new Staff = "lower" \cueXIIIlower
   >>
-  \layout { ragged-right = ##f }
+  \layout { ragged-right = ##f 
+            ragged-last = ##f }
   \midi { }
 }
 % ---------- THEMES ----------
@@ -294,7 +295,8 @@ cueXIIIchords = \chords {
     { g1~ g4 fis1~ fis4 e1~ e4 fis1~ fis4 g1~ g4 fis1~ fis4 e1~ e4 c1~ c4 } >>
     \tempo "Woman: Molto rubato"
     \time 4/4
-    s2. g''4( g'2.) \tuplet 3/2 { f8( g a } g2.) g,4( g'1) \acciaccatura { f16 e } c1 \bar ":|."
+    \cadenzaOn
+    g''4( g'2.) \tuplet 3/2 { f8( g a } g2.) g,4( g'1) \acciaccatura { f16 e } c1 \bar ":|."
   }
 
   \layout {
@@ -360,7 +362,7 @@ cueXIIIchords = \chords {
     \caps { Cue 12. } I'll admit, I'm really proud of this cue. Opening up Patchface's theme, creating a sparse texture with held chords, and moving the melody up top creates an entirely new feel to something we should now be quite familiar with. This new feeling not only conveys the sadness that we find in this scene, but also represents change, not only in Patchface's employment, but also in the advancing of technology.
   }
   \justified-lines {
-    \caps { Cue 13. }
+    \caps { Cue 13. } At long last, the jazz origins of Woman's theme are revealed. This cue allows for some flexibilty and improvisation. Timing is important with the final cue to align with onstage action, but if preferred, simply vamping the jazz tune is fine as well.
   }
   \justified-lines {
     I want to conclude these (very lengthy) notes by thanking my teammates at Allswell Productions, Christine, Regine, and Hailey, for trusting me with this project, and by extension to our other projects as well. Thank you to Camille for allowing me to share in your creative space and to add my music to an already great script. Thank you also to my friends, family, and Emma, for their continued support of me and my work.
