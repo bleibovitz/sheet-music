@@ -254,6 +254,29 @@ cueXIIlower = \relative c' {
   \midi { }
 }
 % ---------- CUE 13 ----------
+cueXIIIupper = \relative c'' {
+  \clef treble
+  \tempo "Jazz ballad, easy swing" 4 = 67
+  << { \override NoteHead.style = #'slash b4^"vamp if needed; comp/improv" b b b \repeat percent 3 { b b b b } \bar ":|.|:" } \\ { s1 s s r2_"last time:" r4 g, } >> \break
+  \mark \default g'1^"chords etc. ad lib" ~ g2 \tuplet 3/2 { f4 g a } g1 ~ g2. g,4 g'1^"on cue: jump to coda" ~ g2 f8 e4 c8 ~ c1 r4^"ad lib turnaround" r r g \bar ":|."
+  \mark \markup { \musicglyph #"scripts.coda" } R1 \bar "|."
+}
+cueXIIIchords = \chords {
+  c2:maj7 a:min7 d:min9 g:9-13 c:maj7 a:min7 d:min9 g:9-13 R1*8 f:/g
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 13. } \italic { And I know where I have to go } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \cueXIIIchords
+    \new Staff = "upper" \cueXIIIupper
+    %\new Staff = "lower" \cueXIIIlower
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
 % ---------- THEMES ----------
 \pageBreak
 \score {
