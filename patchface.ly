@@ -98,6 +98,7 @@ cueIVupper = \relative c' {
   \clef treble
   \key c \major
   \time 2/2
+  \tempo "Rubato" 2 = 40
   <e e'>1\arpeggio\mf <d d'>\arpeggio ~ <d d'> \time 3/2 <c c'>_\markup { \italic { sim. } } <d d'>2 \time 2/2 <e e'>1 <d d'> ~ \time 3/2 <d d'>\> <c c'>2 \time 2/2 <a a'>1\!\p \bar "|."
 }
 cueIVlower = \relative c {
