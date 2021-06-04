@@ -223,6 +223,34 @@ cueVIIIlower = \relative c {
 % ---------- CUE 09 ----------
 % ---------- CUE 10 ----------
 % ---------- CUE 11 ----------
+cueXIupper = \relative c'' {
+  \clef treble
+  \time 6/8
+  \partial 8
+  \key d \major
+  \tempo "Flowing, poco rubato" 4. = 45
+  a8\mf( \bar ".|:" a'4.) g8( a b a4. ~ a4) a,8( a'4.) g8( fis d ~ d4. ~ d4) a8( a'4.)^"(vamp, end on a sustained downbeat on cue)" g8( a b a4. ~ a4) a,8( a'4.) g8( fis d ~ d4. ~ d4) a8 \bar ":|."
+}
+cueXIlower = \relative c' {
+  \clef bass
+  \time 6/8
+  \partial 8
+  \key d \major
+  r8 << { b4.(^\< d^\! d^\> cis)^\! a(^\markup { \italic { sim. } } cis cis b) b( d d cis) a( cis a gis) \bar ":|." } \\
+     { <g, d'>2. <a e'> <fis cis'> <g d'> <g d'> <a e'> <fis cis'> <e b'b'> } >>
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 11. } \italic { And we speak of life } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueXIupper
+    \new Staff = "lower" \cueXIlower
+  >>
+  \layout { }
+  \midi { }
+}
 % ---------- CUE 12 ----------
 cueXIIupper = \relative c'' {
   \clef treble
@@ -256,13 +284,14 @@ cueXIIlower = \relative c' {
 % ---------- CUE 13 ----------
 cueXIIIupper = \relative c'' {
   \clef treble
+  \key es \major
   \tempo "Jazz ballad, easy swing" 4 = 67
-  << { \override NoteHead.style = #'slash b4^"vamp if needed; comp/improv" b b b \repeat percent 3 { b b b b } \bar ":|.|:" } \\ { s1 s s r2_"last time:" r4 g, } >> \break
-  \mark \default g'1^"chords etc. ad lib" ~ g2 \tuplet 3/2 { f4 g a } g1 ~ g2. g,4 g'1^"on cue: jump to coda" ~ g2 f8 e4 c8 ~ c1 r4^"ad lib turnaround" r r g \bar ":|."
+  << { \override NoteHead.style = #'slash bes4^"vamp if needed; comp/improv" bes bes bes \repeat percent 3 { bes bes bes bes } \bar ":|.|:" } \\ { s1 s s r2_"last time:" r4 bes, } >> \break
+  \mark \default bes'1^"chords etc. ad lib" ~ bes2 \tuplet 3/2 { as4 bes c } bes1 ~ bes2. bes,4 bes'1^"on cue: jump to coda" ~ bes2 as8 g4 es8 ~ es1 r4^"ad lib turnaround" r r bes \bar ":|."
   \mark \markup { \musicglyph #"scripts.coda" } R1 \bar "|."
 }
 cueXIIIchords = \chords {
-  c2:maj7 a:min7 d:min9 g:9-13 c:maj7 a:min7 d:min9 g:9-13 R1*8 f:/g
+  es2:maj7 c:min7 f:min9 bes:9-13 es:maj7 c:min7 f:min9 bes:9-13 R1*8 as:/bes
 }
 \score {
   \header {
@@ -356,13 +385,13 @@ cueXIIIchords = \chords {
     \caps { Cue 10. }
   }
   \justified-lines {
-    \caps { Cue 11. }
+    \caps { Cue 11. } Man and Woman's relationship has seemingly reached new heights, now in the key of D major. This iteration of these two themes, now familiar to our ears, is now more forward-moving, with fewer moments of repose. This decision is twofold: not only does it also help demonstrate the development between Man and Woman, but the quicker tempo makes the sudden stop on cue more effective.
   }
   \justified-lines {
     \caps { Cue 12. } I'll admit, I'm really proud of this cue. Opening up Patchface's theme, creating a sparse texture with held chords, and moving the melody up top creates an entirely new feel to something we should now be quite familiar with. This new feeling not only conveys the sadness that we find in this scene, but also represents change, not only in Patchface's employment, but also in the advancing of technology.
   }
   \justified-lines {
-    \caps { Cue 13. } At long last, the jazz origins of Woman's theme are revealed. This cue allows for some flexibilty and improvisation. Timing is important with the final cue to align with onstage action, but if preferred, simply vamping the jazz tune is fine as well.
+    \caps { Cue 13. } At long last, the jazz origins of Woman's theme are revealed. Once again, Woman's theme has reached new heights, now in the key of E-flat, showing yet further development in her character. This cue allows for some flexibilty and improvisation. Timing is important with the final cue to align with onstage action, but if preferred, simply vamping the jazz tune is fine as well.
   }
   \justified-lines {
     I want to conclude these (very lengthy) notes by thanking my teammates at Allswell Productions, Christine, Regine, and Hailey, for trusting me with this project, and by extension to our other projects as well. Thank you to Camille for allowing me to share in your creative space and to add my music to an already great script. Thank you also to my friends, family, and Emma, for their continued support of me and my work.
