@@ -4,7 +4,7 @@
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = "v.1 - last updated 2021/06/02"
+  tagline = "v.1 - last updated 2021/06/04"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -420,6 +420,6 @@ cueXIIIchords = \chords {
 \markup {
   \column {
     \line { \bold \caps { Change Log. } }
-    \line { "v.1 - 2021/06/02 - initial version." }
+    \line { "v.1 - 2021/06/04 - initial version." }
   }
 }
