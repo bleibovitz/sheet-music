@@ -221,6 +221,34 @@ cueVIIIlower = \relative c {
   \midi { }
 }
 % ---------- CUE 09 ----------
+cueIXupper = \relative c'' {
+  \clef treble
+  \key g \major
+  \tempo "Melancholic" 4 = 45 
+  d4\mf d d d( \bar ".|:" \mark \default \time 5/4
+  \repeat unfold 3 { d'1) \tuplet 3/2 { c8( d e } d1) d,4( } d'1 ~ d4) c16 b g8 ~ g1 \bar ":|."
+  \mark \default << { \repeat unfold 4 { d'1 ~ d8 d, } d'1 ~ d4\fermata \bar "|." } \\
+                    { \repeat unfold 4 { <d,, g a>4 <d g a> <d g a> <d g a> <d g a> } <c g' b>1\decresc ~ <c g' b>4\!\fermata } >>
+}
+cueIXlower = \relative c' {
+  \clef bass
+  \key g \major
+  R1 \bar ".|:" \time 5/4 g4-_ g'-_ g,-_ g'-_ g,-_ fis'^\markup { \italic sim. } fis, fis' fis, fis' e, e' e, e' e, fis' fis, fis' fis, fis'
+  g, g' g, g' g, fis' fis, fis' fis, fis' e, e' e, e' e, c' c, c' c, c' \bar ":|."
+  fis,1~^\markup { \musicglyph #"scripts.coda" A4 } fis4 g1~^\markup { \musicglyph #"scripts.coda" A1 & A5 } g4 fis1~^\markup { \musicglyph #"scripts.coda" A2 & A6 } fis4 e1~^\markup { \musicglyph #"scripts.coda" A3 & A7 } e4 c1~ c4\fermata \bar "|."
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 9. } \italic { She's young, she's pretty } }
+  }
+  \new PianoStaff <<
+    \set PianoStaff.instrumentName = #"Piano  "
+    \new Staff = "upper" \cueIXupper
+    \new Staff = "lower" \cueIXlower
+  >>
+  \layout { }
+  \midi { }
+}
 % ---------- CUE 10 ----------
 % ---------- CUE 11 ----------
 cueXIupper = \relative c'' {
@@ -229,14 +257,14 @@ cueXIupper = \relative c'' {
   \partial 8
   \key d \major
   \tempo "Flowing, poco rubato" 4. = 45
-  a8\mf( \bar ".|:" a'4.) g8( a b a4. ~ a4) a,8( a'4.) g8( fis d ~ d4. ~ d4) a8( a'4.)^"(vamp, end on a sustained downbeat on cue)" g8( a b a4. ~ a4) a,8( a'4.) g8( fis d ~ d4. ~ d4) a8 \bar ":|."
+  a8\mf( \bar ".|:" a'4.)\< g8(\! a b a4.\> ~ a4)\! a,8( a'4.) g8( fis d ~ d4. ~ d4) a8( a'4.)^"(vamp, end on a sustained downbeat on cue)" g8( a b a4. ~ a4) a,8( a'4.) g8( fis d ~ d4. ~ d4) a8 \bar ":|."
 }
 cueXIlower = \relative c' {
   \clef bass
   \time 6/8
   \partial 8
   \key d \major
-  r8 << { b4.(^\< d^\! d^\> cis)^\! a(^\markup { \italic { sim. } } cis cis b) b( d d cis) a( cis a gis) \bar ":|." } \\
+  r8 << { b4.( d d cis) a(^\markup { \italic { sim. } } cis cis b) b( d d cis) a( cis a gis) \bar ":|." } \\
      { <g, d'>2. <a e'> <fis cis'> <g d'> <g d'> <a e'> <fis cis'> <e b'b'> } >>
 }
 \score {
