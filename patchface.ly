@@ -353,7 +353,7 @@ cueXIIlower = \relative c' {
 }
 \score {
   \header {
-    piece = \markup { \bold \caps { Cue 12. } \italic { And I should have known } }
+    piece = \markup { \bold \caps { Cue 12. } \italic { I should have known } }
   }
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano  "
@@ -480,10 +480,147 @@ cueXIIIchords = \chords {
   }
   \caps { "-BZL, June 2021" }
 }
+\pageBreak
 % ---------- CUE NOTES ----------
-\markup { \bold \caps { Notes for Cues and Editing. } }
+\markuplist {
+  \justified-lines { \bold \caps { Notes for Cues and Editing. } }
+  \justified-lines {
+    The music of Patchface was written to work around the performers, not the other way around. This way, the actors could film the show without the worry of lining up to music that would likely be added in post-production. Most cues are simple start/stop or employ simple fade-outs over repeating material, but some cues are designed to allow for more precise timing. The name of each cue corresponds to the start line of each. In this section, I've compiled notes for entrances and exits of the music, as per initial talks with director Hailey Hill, but of course can be adjusted as desired. Page numbers given relate to the final version of the script.
+  }
+  \justified-lines {
+    \caps { Cue 1. }
+  }
+  \justified-lines {
+    "In: Patchface: \"The year is 1969\" (p. 3)."
+  }
+  \justified-lines {
+    "Out: Patchface: \"They hire me at the switchboards.\" (p. 3). Fade out."
+  }
+  \justified-lines {
+    \caps { Cue 2. }
+  }
+  \justified-lines {
+    "In: Man: \"The year is 1969\" (p. 4)."
+  }
+  \justified-lines {
+    "Out: Patchface: \"Hello?\" (p. 5). Find a held chord and cut/fade."
+  }
+  \justified-lines {
+    \caps { Cue 3. }
+  }
+  \justified-lines {
+    "In: the dial tone right before Patchface: \"It pays the bills\" (p. 10). The" cue will provide this dial tone sound effect, so it does not need to be accounted for elsewhere.
+  }
+  \justified-lines {
+    "Out: Patchface: \"I play operator, until -\" (p. 11). Fade out."
+  }
+  \justified-lines {
+    \caps { Cue 4. }
+  }
+  \justified-lines {
+    "In: Man: \"I start imagining her\" (p. 14)."
+  }
+  \justified-lines {
+    "Out: Man: \"And things aren't getting better at home\" (p. 15). This cue should work as-is."
+  }
+  \justified-lines {
+    \caps { Cue 5. }
+  }
+  \justified-lines {
+    "In: Man: \"Write this down\" (p. 19)"
+  }
+  \justified-lines {
+    "Out: Man: \"... we'll go right at it again. And I-\" (p. 20). Cut off abruptly with this line."
+  }
+  \justified-lines {
+    \caps { Cue 6. }
+  }
+  \justified-lines {
+    "In: Woman: \"There is one dream I do remember\" (p. 20)."
+  }
+  \justified-lines {
+    "Out: Woman: \"It's all slipping through my fingers\" (p. 20). This cue should work as-is."
+  }
+  \justified-lines {
+    \caps { Cue 7. }
+  }
+  \justified-lines {
+    "In: Patchface: \"And I keep calling\" (p. 23)."
+  }
+  \justified-lines {
+    "Out: Patchface: \"I know everything\" (p. 23). Let the chord die out. Each \"his\" should" ideally align with a beat in the third measure.
+  }
+  \justified-lines {
+    \caps { Cue 8. }
+  }
+  \justified-lines {
+    "In: Woman: \"I want so badly to see her\" (p. 33)."
+  }
+  \justified-lines {
+    "Out: Woman: \"How do you know\" (p.35). Fade out."
+  }
+  \justified-lines {
+    \caps { Cue 9. }
+  }
+  \justified-lines {
+    "In: Woman: \"She's young, she's pretty\" (p. 40)."
+  }
+  \justified-lines {
+    "Mark A: Woman: \"She grew up on a farm\" (p. 40); this can be approximate."
+  }
+  \justified-lines {
+    "Mark B: Woman: \"And she calls me again\" (p. 41). Advance" from the vamping A section to the corresponding measure in the B section (for instance, if about to play the 4th measure of A, replace it with the first measure of B). If about to play the final measure of A, finish the section then go to A1 (second measure of B).
+  }
+  \justified-lines {
+    "Out: Patchface: \"I'll never talk to him again\" (p. 41). Music" should be out by this line; the cue should work as-is.
+  }
+  \justified-lines {
+    \caps { Cue 10. }
+  }
+  \justified-lines {
+    "In: Patchface: \"And I do. And she talks\" (p. 42)."
+  }
+  \justified-lines {
+    "Out: Woman: \"And I picture her\" (p. 45). Fade out."
+  }
+  \justified-lines {
+    \caps { Cue 11. }
+  }
+  \justified-lines {
+    "In: Woman: \"And we speak of\" (p. 47)."
+  }
+  \justified-lines {
+    "Out: Woman: \"... one day he catches me\" (p. 48)." On the line, sustain the next downbeat and let it fade out.
+  }
+  \justified-lines {
+    \caps { Cue 12. }
+  }
+  \justified-lines {
+    "In: Patchface: \"I should have known\" (p. 53)."
+  }
+  \justified-lines {
+    "Out: Patchface: \"I run back into the building\" (p. 54). Fade out."
+  }
+  \justified-lines {
+    \caps { Cue 13. }
+  }
+  \justified-lines {
+    "In: Patchface: \"And I know where I have to go\" (p. 55)."
+  }
+  \justified-lines {
+    "Mark A: Patchface: \"That's when I hear the music\" (p. 55)." A standard repeat will likely do here.
+  }
+  \justified-lines {
+    Coda: Patchface notices Woman (p. 56). Fade out on the chord.
+  }
+}
 % ---------- PATCHES ----------
-\markup { \bold \caps { Patch Instructions. } }
+\markuplist { 
+  \justified-lines { \bold \caps { Patch Instructions. } }
+  \justified-lines {
+    Patch information will be added in a future version of the score.
+  }
+}
 % ---------- BIO ----------
 \markup {
   \column {
