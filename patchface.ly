@@ -464,7 +464,7 @@ cueXIIIchords = \chords {
     \caps { Cue 9. } The "light \"tick-tock\" motive" in the left hand represents the passing of time through this monologue as we recall Woman's story, and hints at the bassline of Patchface's theme as she attentively listens. When Patchface calls her again, Patchface's theme is now fully present underneath Woman's theme failing to start, as she struggles with the conversation at hand. We end on a pensive open seventh chord with an added ninth as the conversation tenses - not a complete resolution, but it will have to do for now.
   }
   \justified-lines {
-    \caps { Cue 10. }
+    \caps { Cue 10. } If the best composers in the world can use a background waltz to pass time, then I can too. "The \"Disney-style\" key" changes are here just for variation. I leaned into cliché heavily on this one, but why not use what is proven to work?
   }
   \justified-lines {
     \caps { Cue 11. } Man and Woman's relationship has seemingly reached new heights, now in the key of D major. This iteration of these two themes, now familiar to our ears, is now more forward-moving, with fewer moments of repose. This decision is twofold: not only does it also help demonstrate the development between Man and Woman, but the quicker tempo makes the sudden stop on cue more effective.
