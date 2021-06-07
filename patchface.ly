@@ -407,7 +407,7 @@ cueXIIIchords = \chords {
     \caps { Cue 8. } This moment being one of the most climactic in the show is not lost on me. Here, we see all three themes make an entrance with each other. Woman's theme, alone, is overlayed with the Patchface-Man mixture seen in Cue 5. Eventually, Patchface's theme drops out as the conversation shifts to just between Man and Woman. Again, the gravity of this scene is conveyed now by additional octaves in Man's accompanying figure, giving this scene some additional depth and enriching the texture. I must say that I was exceptionally pleased to discover that all three themes could work together; I had originally envisioned that only two at a time would work, so to be able to have all three here was a great joy.
   }
   \justified-lines {
-    \caps { Cue 9. }
+    \caps { Cue 9. } The "light \"tick-tock\" motive" in the left hand represents the passing of time through this monologue as we recall Woman's story, and hints at the bassline of Patchface's theme as she attentively listens. When Patchface calls her again, Patchface's theme is now fully present underneath Woman's theme failing to start, as she struggles with the conversation at hand. We end on a pensive open seventh chord with an added ninth as the conversation tenses - not a complete resolution, but it will have to do for now.
   }
   \justified-lines {
     \caps { Cue 10. }
