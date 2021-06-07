@@ -250,6 +250,60 @@ cueIXlower = \relative c' {
   \midi { }
 }
 % ---------- CUE 10 ----------
+cueXupper = \relative c' {
+  \clef treble
+  \key g \major
+  \tempo "Waltz, in 1" 2. = 60 
+  \time 3/4
+  \repeat percent 4 { r4 <a d g> <a d g> r <a d g> ~ <a d g> } \bar ":|.|:"
+  \repeat volta 2 { \repeat percent 6 { r4 <a d g> <a d g> r <a d g> ~ <a d g> } r4 <a d g> <a d g> r <b d g> ~ <b d g> \repeat percent 3 { r4 <c d g> <c d g> r <c d g> ~ <c d g> } }
+  \alternative {
+     { r4 <c d g> <c d g> r <c d g> ~ <c d g> }
+     { r4 <c d g> <c d g> r <c d g> ~ <c d g> \bar "||" }
+  }
+     \repeat percent 4 { r4 <a d g> <a d g> r <a d g> ~ <a d g> } \bar ":|]"
+     \key as \major s2._"etc."
+}
+cueXthird = \relative c' {
+  \key g \major
+  \time 3/4
+  R2.*7 r4_"2nd x:" r d4( \bar ":|.|:"
+  \repeat volta 2 { d'2.) c4.( d8 e4 d2. ~ d4) r d,( d'2.) c4.( d8 e4 d2. ~ d4) r d,( d'2.) c4.( d8 e4 d2. ~ d4) r d,( d'2.) c2( b4 g2. ~ g ~ g ~ g) R2.*2 }
+  \alternative {
+    { R2. r4 r d }
+    { R2.*2 \bar "||" }
+  }
+  R2.*4 R2.*4_"D.C. up a semitone, take 2nd time of intro, vamp as needed" \bar ":|]"
+  \key as \major s2.
+}
+cueXlower = \relative c {
+  \clef bass
+  \key g \major
+  \time 3/4
+  g4 r r d r r fis r r d r r e r r d r r fis r r d r r \bar ":|.|:"
+  \repeat volta 2 { g4 r r d r r fis r r d r r e r r d r r fis r r d r r g4 r r d r r fis r r d r r e r r d r r c r r g r r c r r g'( a g) c, r r g r r }
+  \alternative {
+    { a( b c d e fis) }
+    { c r r d r r \bar "||" }
+  }
+  g4 r r d r r fis r r d r r e r r d r r fis r r d r r \bar ":|]"
+  \key as \major s2.
+}
+\score {
+  \header {
+    piece = \markup { \bold \caps { Cue 10. } \italic { And I do, and she talks } }
+  }
+  <<
+    \new Staff = "third" \cueXthird
+    \new PianoStaff <<
+      \set PianoStaff.instrumentName = #"Piano  "
+      \new Staff = "upper" \cueXupper
+      \new Staff = "lower" \cueXlower
+    >>
+  >>
+  \layout { }
+  \midi { }
+}
 % ---------- CUE 11 ----------
 cueXIupper = \relative c'' {
   \clef treble
