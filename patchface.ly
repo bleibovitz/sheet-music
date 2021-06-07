@@ -4,7 +4,7 @@
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = "v.1 - last updated 2021/06/04"
+  tagline = "v.1 - last updated 2021/06/07"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -226,7 +226,7 @@ cueIXupper = \relative c'' {
   \key g \major
   \tempo "Melancholic" 4 = 45 
   d4\mf d d d( \bar ".|:" \mark \default \time 5/4
-  \repeat unfold 3 { d'1) \tuplet 3/2 { c8( d e } d1) d,4( } d'1 ~ d4) c16 b g8 ~ g1 \bar ":|."
+  \repeat unfold 3 { d'1) \tuplet 3/2 { c8( d e } d1) d,4( } d'1 ~ d4) c16( b g8 ~ g2.) d4 \bar ":|."
   \mark \default << { \repeat unfold 4 { d'1 ~ d8 d, } d'1 ~ d4\fermata \bar "|." } \\
                     { \repeat unfold 4 { <d,, g a>4 <d g a> <d g a> <d g a> <d g a> } <c g' b>1\decresc ~ <c g' b>4\!\fermata } >>
 }
@@ -448,6 +448,6 @@ cueXIIIchords = \chords {
 \markup {
   \column {
     \line { \bold \caps { Change Log. } }
-    \line { "v.1 - 2021/06/04 - initial version." }
+    \line { "v.1 - 2021/06/07 - initial version." }
   }
 }
