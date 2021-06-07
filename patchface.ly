@@ -1,3 +1,4 @@
+\version "2.18.2" %VERSION 1 FINAL
 \header {
   dedication = "Allswell Productions presents"
   title = \markup { \caps Patchface }
@@ -639,6 +640,6 @@ cueXIIIchords = \chords {
 \markup {
   \column {
     \line { \bold \caps { Change Log. } }
-    \line { "v.1 - 2021/06/07 - initial version." }
+    \line { "v.1 - 2021/06/07 - initial version (no Patch Instructions)." }
   }
 }
