@@ -1,11 +1,11 @@
-\version "2.18.2" %VERSION 1 FINAL
+\version "2.18.2" %VERSION 2 FINAL
 \header {
   dedication = "Allswell Productions presents"
   title = \markup { \caps Patchface }
   subtitle = "Incidental Music"
   composer = "B. Leibovitz"
   copyright = \markup { "Copyright" \char ##x00A9 "2021" }
-  tagline = "v.1 - last updated 2021/06/07"
+  tagline = "v.2 - last updated 2021/06/08"
 }
 % ---------- CUE 01 ----------
 cueIupper = \relative c' {
@@ -40,14 +40,14 @@ cueIIupper = \relative c'' {
   \time 2/2
   \tempo "Rubato" 2 = 40
   \partial 4
-  g4\fermata \mf(\bar ".|:" | g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1 ~ | \time 3/2 g ~ g4\fermata) g,( | \time 2/2 g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8 e c~ } c4~ c4\fermata g \bar ":|."
+  g4\fermata \mf(\bar ".|:" | g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1 ~ | \time 3/2 g ~ g4\fermata) g,( | \time 2/2 g'1~ \time 3/2 g\fermata) \tuplet 3/2 { f4( g a } | \time 2/2 g1) \tuplet 3/2 { f8^"(vamp as needed)" e c~ } c4~ c4\fermata g \bar ":|."
 }
 cueIIlower = \relative c {
   \clef bass
   \key c \major
   \time 2/2
   \partial 4
-  r4\fermata \bar ".|:" << { a'2( c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~\fermata a) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) \bar ":|." } \\
+  r4\fermata \bar ".|:" << { a'2( c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~ a\fermata) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) \bar ":|." } \\
     { <<f,1 c'>> <g d'>1. <e b'>1 <f c'>1. <f c'>1 <g d'>1. <e b'>1 <d a' a'> } >>
 }
 \score {
@@ -100,7 +100,7 @@ cueIVupper = \relative c' {
   \key c \major
   \time 2/2
   \tempo "Rubato" 2 = 40
-  <e e'>1\arpeggio\mf <d d'>\arpeggio ~ <d d'> \time 3/2 <c c'>_\markup { \italic { sim. } } <d d'>2 \time 2/2 <e e'>1 <d d'> ~ \time 3/2 <d d'>\> <c c'>2 \time 2/2 <a a'>1\!\p \bar "|."
+  <e e'>1\arpeggio\mf <d d'>\arpeggio ~ <d d'> \time 3/2 <c c'>_\markup { \italic { sim. } }\fermata <d d'>2 \time 2/2 <e e'>1 <d d'> ~ \time 3/2 <d d'>\> <c c'>2 \time 2/2 <a a'>1\!\p\fermata \bar "|."
 }
 cueIVlower = \relative c {
   \clef bass
@@ -124,7 +124,7 @@ cueIVlower = \relative c {
 % ---------- CUE 05 ----------
 cueVupper = \relative c''' {
   \clef treble
-  \tempo "Tenderly" 4 = 95 << { a2( c c b) g( b b^"repeat if time allows" a) \bar ":|.|:" \tempo "Warm, gathering momentum" a,( c c b) g( b b^"repeat if time allows" a) \bar ":|.|:" \tempo "Grand, a bit faster" 4 = 105 a( c c b) g( b b^"vamp until cutoff" a) \bar ":|." } \\
+  \tempo "Tenderly" 4 = 95 << { a2( c c b) g( b b^"repeat if time allows" a) \bar ":|.|:" \tempo "Warm, gathering momentum" a,( c c b) g( b b^"repeat if time allows" a) \bar ":|.|:" \tempo "Grand, a bit faster" 4 = 105 a( c c b) g( b b^"(vamp until cutoff)" a) \bar ":|." } \\
     { <c d>1\p \repeat unfold 3 { <c d> } <c, d>\mf \repeat unfold 3 { <c d> } r8\f c( f a) r8 c,( f a) \repeat unfold 2 { r c, e g } \repeat unfold 2 { r c, d f } \repeat unfold 2 { r c e g } } >>
 }
 cueVlower = \relative c' {
@@ -149,7 +149,7 @@ cueVI = \transpose g d' {
     \partial 4
     \key c \major
     \tempo "Largo e molto rubato"
-      g4( \repeat percent 3 { g'2.) \tuplet 3/2 { f8( g a } g2.) g,4\laissezVibrer } g'1 \acciaccatura { f16 e } c1 \bar "|."
+      g4( \repeat percent 3 { g'2.) \tuplet 3/2 { f8( g a } g2.) g,4\laissezVibrer } g'1\repeatTie \acciaccatura { f16 e } c1 \bar "|."
   }
 }
 \score {
@@ -203,7 +203,7 @@ cueVIIIlower = \relative c {
   \clef bass
   \partial 4
   r4 | f1 e d e f e d a2( g) \bar "||"
-  << { a'2(^\p c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~\fermata a) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) a2( c \time 3/2 c b~\fermata b) \bar ":|." } \\
+  << { a'2(^\p c \time 3/2 c b~\fermata b) \time 2/2 g( b \time 3/2 b a~ a\fermata) \time 2/2 a( c \time 3/2  c b~\fermata b) \time 2/2 g( b g fis\fermata) a2( c \time 3/2 c b~\fermata b) \bar ":|." } \\
     { <f, c'>1 <g d'>1. <e, e' b'>1_"play pedal notes 2x on" <f f' c'>1. <f f' c'>1 <g g' d'>1. <e e' b'>1 <d d' a' a'> <f f' c'>1_"play pedal notes" <g g' d'>1. } >>
 }
 \score {
@@ -268,20 +268,20 @@ cueXupper = \relative c' {
 cueXthird = \relative c' {
   \key g \major
   \time 3/4
-  R2.*7 r4_"2nd x:" r d4( \bar ":|.|:"
+  R2.*7 r4_"2nd x:" r d4\mp( \bar ":|.|:"
   \repeat volta 2 { d'2.) c4.( d8 e4 d2. ~ d4) r d,( d'2.) c4.( d8 e4 d2. ~ d4) r d,( d'2.) c4.( d8 e4 d2. ~ d4) r d,( d'2.) c2( b4 g2. ~ g ~ g ~ g) R2.*2 }
   \alternative {
     { R2. r4 r d }
     { R2.*2 \bar "||" }
   }
-  R2.*4 R2.*4_"D.C. up a semitone, take 2nd time of intro, vamp as needed" \bar ":|]"
+  R2.*4 R2.*4_"D.C. up a semitone, take 2nd time of intro (vamp as needed)" \bar ":|]"
   \key as \major s2.
 }
 cueXlower = \relative c {
   \clef bass
   \key g \major
   \time 3/4
-  g4 r r d r r fis r r d r r e r r d r r fis r r d r r \bar ":|.|:"
+  g4^\p r r d r r fis r r d r r e r r d r r fis r r d r r \bar ":|.|:"
   \repeat volta 2 { g4 r r d r r fis r r d r r e r r d r r fis r r d r r g4 r r d r r fis r r d r r e r r d r r c r r g r r c r r g'( a g) c, r r g r r }
   \alternative {
     { a( b c d e fis) }
@@ -342,14 +342,14 @@ cueXIIupper = \relative c'' {
   \key g \major
   <a g'>1\p ~ <a g'>4 <a fis'>1 ~ <a fis'>4 <a e'>1 ~ <a e'>4 <a fis'>1 ~ <a fis'>4 <a g'>1 ~ <a g'>4 <a fis'>1 ~ <a fis'>4 <a e'>1 ~ <a e'>4 <b e>1 ~ <b e>4 \bar ".|:"
   \repeat percent 7 {<d, g a>4\pp <d g a> <d g a> <d g a> <d g a>} <c g' b>^"repeat only if needed" <c g' b> <c g' b> <c g' b> <c g' b> \bar ":|."
-  <d g a>^"vamp, long fade to nothing"\> <d g a> <d g a> <d g a> <d g a>\! \bar ":|."
+  <d g a>^"(vamp, long fade to nothing)"\> <d g a> <d g a> <d g a> <d g a>\! \bar ":|."
 }
 cueXIIlower = \relative c' {
   \clef bass
   \time 5/4
   \key g \major
   \repeat unfold 7 { <g d'>1 ~ <g d'>4 } <g c>1 ~ <g c>4 \bar ".|:"
-  g1^\mf ~ g8 a16 g fis1 ~ fis8 g16 fis e1 ~ e8 d16 e fis1 ~ fis8 e16 fis g1 ~ g8 a16 g fis1 ~ fis8 g16 fis e1 ~ e8 d c1 ~ c4 ~ \bar ":|.|:"
+  g1^\mf ~ g8 a16( g fis1 ~ fis8) g16( fis e1 ~ e8) d16( e fis1 ~ fis8) e16( fis g1 ~ g8) a16( g fis1 ~ fis8) g16( fis e1 ~ e8) d( c1 ~ c4) ~ \bar ":|.|:"
   c1 ~ c4\laissezVibrer \bar ":|."
 }
 \score {
@@ -486,7 +486,7 @@ cueXIIIchords = \chords {
 \markuplist {
   \justified-lines { \bold \caps { Notes for Cues and Editing. } }
   \justified-lines {
-    The music of Patchface was written to work around the performers, not the other way around. This way, the actors could film the show without the worry of lining up to music that would likely be added in post-production. Most cues are simple start/stop or employ simple fade-outs over repeating material, but some cues are designed to allow for more precise timing. The name of each cue corresponds to the start line of each. In this section, I've compiled notes for entrances and exits of the music, as per initial talks with director Hailey Hill, but of course can be adjusted as desired. Page numbers given relate to the final version of the script.
+    The music of \italic { Patchface } was written to work around the performers, not the other way around. This way, the actors could film the show without the worry of lining up to music that would likely be added in post-production. Most cues are simple start/stop or employ simple fade-outs over repeating material, but some cues are designed to allow for more precise timing. The name of each cue corresponds to the start line of each. In this section, I've compiled notes for entrances and exits of the music, as per initial talks with director Hailey Hill, but of course can be adjusted as desired. Page numbers given relate to the final version of the script.
   }
   \justified-lines {
     \caps { Cue 1. }
@@ -641,5 +641,6 @@ cueXIIIchords = \chords {
   \column {
     \line { \bold \caps { Change Log. } }
     \line { "v.1 - 2021/06/07 - initial version (no Patch Instructions)." }
+    \line { "v.2 - 2021/06/08 - minor additions and revisions." }
   }
 }
